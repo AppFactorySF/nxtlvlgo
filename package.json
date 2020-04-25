@@ -1,0 +1,22 @@
+{
+  "name": "nxtlvlgo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:AppFactorySF/nxtlvlgo.git",
+  "author": "Ratko Solaja <ratko@toptal.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "yarn run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "yarn run development -- --watch",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "yarn run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "laravel-mix": "^5.0.4",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2"
+  }
+}
